@@ -1,19 +1,16 @@
-<head>
-  <title>tartanhacks</title>
-</head>
-
 <body>
-  What's your favorite hackathon?
-  <br />
-  {{> hackathons}}
+  <h1>What's your favorite
+    programming language?</h1>
+  {{> language_voter}}
 </body>
 
-<template name="hackathons">
-  {{#each hackathons}}
-    {{> hackathon}}
+<template name="language_voter">
+  {{#each list_languages}}
+    {{> language}}
   {{/each}}
 </template>
 
-<template name="hackathon">
-    <input type="button" value="{{name}}" /> ({{votes}} votes).<br />
+<template name="language">
+  <input type="button" value="{{name}}" />
+  ({{votes}} votes).<br />
 </template>

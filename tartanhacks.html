@@ -1,0 +1,19 @@
+<head>
+  <title>tartanhacks</title>
+</head>
+
+<body>
+  What's your favorite hackathon?
+  <br />
+  {{> hackathons}}
+</body>
+
+<template name="hackathons">
+  {{#each hackathons}}
+    {{> hackathon}}
+  {{/each}}
+</template>
+
+<template name="hackathon">
+    <input type="button" value="{{name}}" /> ({{votes}} votes).<br />
+</template>

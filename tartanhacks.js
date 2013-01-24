@@ -1,9 +1,13 @@
+// JAVASCRIPT
+
 Languages =
   new Meteor.Collection('languages');
 
 if (Meteor.isClient) {
   Template.language_voter.list_languages =
     function () {
+      // SELECT * FROM Languages
+      //   ORDER BY votes desc
       return Languages.find({},
               {sort: {"votes": -1}});
   };

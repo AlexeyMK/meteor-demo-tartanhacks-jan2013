@@ -1,6 +1,70 @@
 <html>
-  <head><title>TartanHacks Meteor Demo</title></head>
+  <head>
+    <title>TartanHacks Meteor Demo</title>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+  </head>
   <body>
-    Ohai
+    <div class="container-narrow">
+      <div class="jumbotron">
+        <h1>Meteor</h1>
+        <p class="lead"><strong>The</strong> app framework to learn & use for TartanHacks</p>
+        <a class="btn btn-large btn-success" href="http://meteor.com">You're right!</a>
+      </div>
+      <hr>
+      <div id="reasons" class="row-fluid marketing">
+        <div class="span6">
+          <h4>Reactive</h4>
+          <p>Just write the templates -- when the underlying data changes, they'll update automagically. Yeah, it's pretty awesome.</p>
+          <h4>A web framework made for <del>2012</del> 2013</h4>
+          <p>No leftover ideas from PHP-land. Makes more sense than MVC.</p>
+        </div>
+        <div class="span6">
+          <h4>All you need is Javascript</h4>
+          <p>Client and server-side, all you need to know is Javascript. Runs on top on node.</p>
+          <h4>Deployment Heaven</h4>
+          <p><code>meteor deploy bobswebsite</code> pushes your code to <a href="http://bobswebsite.meteor.com">bobswebsite.meteor.com</a></p>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <a class="btn btn-large btn-success" href="http://meteor.com">I'm so down. Show me.</a>
+      </div>
+    </div>
   </body>
 </html>
